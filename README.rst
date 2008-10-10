@@ -1,4 +1,4 @@
-Requires `elementtree` and `httplib2`
+Requires ``elementtree`` and ``httplib2``
 
 #. Drop your Basecamp info into the script
 #. Create a message in Basecamp (make sure your user entered above has access to the message)
