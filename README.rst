@@ -3,6 +3,8 @@
 #. Note the message ID from the URL (it's the second number)
 #. Create a post-commit hook on your subversion repo that calls this script
 
+::
+
     #! /bin/sh
     BASECAMP_MESSAGE=11111111
     # $1 is the repository path
