@@ -28,6 +28,7 @@ def build_message(repo_path, revision, show_changed_files = True):
     """
     Gets all the commit info and returns a pretty textile formatted message
     """
+    #TODO: check status and raise error if svnlook fails
     commit_author = getoutput("svnlook author %s -r %s" % (repo_path, revision))
     commit_log = getoutput("svnlook log %s -r %s" % (repo_path, revision))
     commit_date = getoutput("svnlook date %s -r %s" % (repo_path, revision))
