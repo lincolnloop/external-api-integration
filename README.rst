@@ -1,3 +1,6 @@
+subversion_basecamp_notifier.py
+===============================
+
 Requires ``elementtree`` and ``httplib2``
 
 #. Drop your Basecamp info into the script
@@ -12,3 +15,14 @@ Requires ``elementtree`` and ``httplib2``
     # $1 is the repository path
     # $2 is the revision
     python /path/to/subversion_basecamp_notifier.py $1 $2 $BASECAMP_MESSAGE
+
+
+imap_to_campfire.py
+===================
+
+Requires pinder_
+
+Built to run as a cron job that will periodically check an IMAP mailbox and post the email headers (from, to, subject) to a Campfire_ chat room.
+
+.. _pinder: http://dev.oluyede.org/pinder/
+.. _Campfire: http://www.campfirenow.com
